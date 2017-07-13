@@ -51,7 +51,7 @@ public class CategoryController
 		m.addAttribute("flag",flag);
 		
 		System.out.println("---Category Added----");
-		return "Category";
+		return "redirect:/Category";
 	}
 	@RequestMapping(value="/deletecategory/{catid}")
 	public String deletecategory(@PathVariable("catid")int catid,Model m)
@@ -61,7 +61,10 @@ public class CategoryController
 		categoryDAO.deleteCategory(category);
 		List<Category> list=categoryDAO.getCategoryDetails();
 		m.addAttribute("catdetail",list);
-		return "Category";
+		boolean flag=false;
+		m.addAttribute("flag",flag);
+	
+		return "redirect:/Category";
 	}
 	@RequestMapping(value="/updatecategory/{catid}")
 	public String getUpdatecategory(@PathVariable("catid")int catid,Model m)
@@ -76,25 +79,30 @@ public class CategoryController
 		m.addAttribute("flag", flag);
 		return "Category";
 	}
-	@RequestMapping(value="/updateCategory",method=RequestMethod.POST)
+	@RequestMapping(value="/updatecategory",method=RequestMethod.POST)
 	public String updateCategory(@RequestParam("catid") int catid,@RequestParam("catname") String catname,@RequestParam("catdesc") String catdesc,Model m)
 	{
-		System.out.println("---Update the Category -----");
 		
+		
+		
+		
+System.out.println("---Update Category Starting-----");
+		
+		System.out.println(catname+":::"+catdesc);
 		
 		Category category=new Category();
-		category.setCatid(catid);
 		category.setCatname(catname);
 		category.setCatdesc(catdesc);
 		
 		categoryDAO.insertUpdateCategory(category);
 		List<Category> list=categoryDAO.getCategoryDetails();
 		m.addAttribute("catdetail",list);
-		boolean flag=true;
-			m.addAttribute("flag",flag);
+		boolean flag=false;
+		m.addAttribute("flag",flag);
 		
 		System.out.println("---Category Added----");
-		return "Category";
+		return "redirect:/Category";
+
 	}
 	
 }

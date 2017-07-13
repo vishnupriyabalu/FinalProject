@@ -1,5 +1,7 @@
 package com.finproject.FinalFrontendProject.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,8 +37,39 @@ public class CartController {
 		cart.setProdname(product.getProdname());
 		cart.setPrice(product.getPrice());
 		
+		cartDAO.addtocart(cart);
+		List<Cart> list=cartDAO.getCartItem(username);
+		m.addAttribute("cartitems",list);
 		return "Cart";
 		
 	}
+	
+	
+	@RequestMapping(value="/updatecartitem/${citemid }")
+	public String updatecartitem(@PathVariable("citemid")int citemid,@RequestParam("quantity") int quantity,HttpSession session,Model m)
+	{
+   Cart cart=(Cart)cartDAO.getCartItem(citemid);
 
+int stock=productDAO.getProduct(cart.getProdid()).getQuantity();
+cart.setQuantity(quantity);
+
+cartDAO.updatecartitem(cart);
+String username=(String)session.getAttribute("username");
+
+List<Cart> list=cartDAO.getCartItem(username);
+m.addAttribute("cartitems",list);
+return "Cart";
+	}
+	
+	
+	@RequestMapping(value="/deletecartitem/${citemid }")
+	public String deletecartitem(@PathVariable("citemid")int citemid,@RequestParam("quantity") int quantity,HttpSession session,Model m)
+	{
+Cart cart=(Cart)cartDAO.getCartItem(citemid);
+cartDAO.deletecartitem(cart);
+String username=(String)session.getAttribute("username");
+List<Cart> list=cartDAO.getCartItem(username);
+m.addAttribute("cartitems",list);
+return "Cart";
+}
 }

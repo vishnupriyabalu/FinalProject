@@ -30,7 +30,8 @@
      	</ul>
      	
  		<ul class="nav navbar-nav navbar-right">
-
+<a href="#" style="color:white;"${session.username}></a>
+			
 				<li><a href="perform_logout" style="color:white;">LOGOUT <span
 						class="glyphicon glyphicon-log-out"></span></a></li>
 						

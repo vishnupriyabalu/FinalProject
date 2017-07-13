@@ -28,31 +28,31 @@ public class Supplier_testcase {
 		System.out.println("Supplier Inserted");
 		
 		//Retrieval TestCase
-		
-		/*Category category=categoryDAO.getCategory(2);
-		System.out.println("Category Name:"+category.getCatname());
-		System.out.println("Category Description:"+category.getCatdesc());*/
+		/*
+		Supplier supplier1=supplierDAO.getSupplier(2);
+		System.out.println("Supplier Name:"+supplier.getSupname());
+		System.out.println("Supplier Description:"+supplier.getSupdesc());
 		
 		//Deletion TestCase
-		/*Category category=categoryDAO.getCategory(2);
-		categoryDAO.deleteCategory(category);
-		System.out.println("The Category Deleted");*/
+		Supplier supplier=supplierDAO.getSupplier(2);
+		supplierDAO.deleteSupplier(supplier);
+		System.out.println("The Supplier Deleted");
 		
 		//Retrieving the Data
 		
-		/*List<Category> list=categoryDAO.getCategoryDetails();
+		List<Supplier> list=supplierDAO.getSupplierDetails();
 		
-		for(Category category:list)
+		for(Supplier supplier:list)
 		{
-			System.out.println(category.getCatid()+":"+category.getCatname()+":"+category.getCatdesc());
-		}*/
+			System.out.println(supplier.getSupid()+":"+supplier.getSupname()+":"+supplier.getSupdesc());
+		}
 		
-		//Update the Category
-		/*Category category=categoryDAO.getCategory(3);
-		category.setCatname("WifiEnMobile");
-		categoryDAO.insertUpdateCategory(category);
-		System.out.println("The Category Updated");*/
-		
+		//Update the Supplier
+		Supplier supplier=supplierDAO.getSupplier(3);
+		supplier.setSupname("WifiEnMobile");
+		supplierDAO.insertUpdateCategory(supplier);
+		System.out.println("The Supplier Updated");
+		*/
 
 	
 }

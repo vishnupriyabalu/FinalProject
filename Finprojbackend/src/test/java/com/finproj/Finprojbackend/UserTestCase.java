@@ -22,12 +22,14 @@ public class UserTestCase {
 		//Insertion TestCase
 		User user=new User();
 		
-		//user.setUsername("vishnu");
+
+		user.setName("vishnu");
+
+			user.setUsername("vishnu123");
 		user.setPassword("priya");
 		user.setRole("");
 		user.setEmail("abc@gmail.com");
-		//user.setAddress("cdm thillai");
-		user.setMobile("764315678");
+			user.setMobile("764315678");
 		user.setEnabled(null);
 		
 		userDAO.insertUpdateUser(user);		

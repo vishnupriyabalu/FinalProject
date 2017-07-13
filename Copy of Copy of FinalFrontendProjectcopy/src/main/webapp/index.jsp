@@ -1,5 +1,15 @@
 <%@ page language="java" contentType="text/html"%>
- 
+ <br>
+
+<header class="bg-red" id="headerArea" role="navigation">
+<div class="container-fluid">
+<nav class="navbar-header"><a class="navbar-brand"><img src="https://stocklogos-pd.s3.amazonaws.com/styles/logo-medium-alt/logos/image/1362179754-1517f970ea37de3987b47514e6e288c6.png?itok=hJr2Px3m" width="90" height="90"/>
+</a>
+<div class="container"><span class="row pull-left charterTitle"><h1 style="color:purple;font-family: Algerian;font-size: 4.5em;font-weight: bold;"><i><b>Gift Plazza</b></i></h1></span></div></nav>
+<br><br><br><br><br><br><br>
+</header>
+
+
  <%@include file="WEB-INF/views/Header.jsp" %>
  <style>
   .carousel-inner > .item > img,
@@ -8,11 +18,11 @@
  height:70 px;
       margin: auto;
   }
+ 
 </style> 
 </head>
 
-<body>
-
+<body style="background-color:#FFCCFF">
 
  <div class="container-fluid">
  
@@ -63,14 +73,14 @@
        <!-- Three columns of text below the carousel -->
       <div class="w">
         <div class="col-lg-4">
-          <img class="img-square" src="http://dreamatico.com/data_images/gift/gift-7.jpg" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-circle" src="http://dreamatico.com/data_images/gift/gift-7.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>gifts for family</h2>
           <p>In this Category you will find the 
 		  home decorating articles</p>
       <!--     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-square" src="http://www.learnvest.com/wp-content/uploads/2013/12/pile-of-gifts.jpg" alt="Generic placeholder image" width="140" 
+          <img class="img-circle" src="http://www.learnvest.com/wp-content/uploads/2013/12/pile-of-gifts.jpg" alt="Generic placeholder image" width="140" 
 
 height="140">
           <h2>Glass articles</h2>
@@ -79,7 +89,7 @@ height="140">
         <!--   <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-		 <img class="img-square" src="http://www.irvingcares.org/wp-content/uploads/2013/11/gift-in-hand-art.jpg" alt="Generic placeholder image" width="140" height="140">
+		 <img class="img-circle" src="http://www.irvingcares.org/wp-content/uploads/2013/11/gift-in-hand-art.jpg" alt="Generic placeholder image" width="140" height="140">
          
            <h2>Greeting Cards</h2>
           <p>In this Category you will find Greeting Cards</p>
@@ -127,12 +137,7 @@ In stray gifts to be claimed by whoever shall find.
 <br>
 
 
- <a href="Category">Category</a>
- <a href="pro">Product</a>
- <a href="abc">Supplier</a>
- <a href="Admin">Admin</a>
  
-
 
 
 

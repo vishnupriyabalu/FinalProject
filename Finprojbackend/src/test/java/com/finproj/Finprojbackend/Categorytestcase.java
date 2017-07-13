@@ -29,30 +29,30 @@ public class Categorytestcase {
 		
 		//Retrieval TestCase
 		
-		/*Category category=categoryDAO.getCategory(2);
+		/*Category category1=categoryDAO.getCategory(2);
 		System.out.println("Category Name:"+category.getCatname());
 		System.out.println("Category Description:"+category.getCatdesc());*/
 		
 		//Deletion TestCase
-		/*Category category=categoryDAO.getCategory(2);
+	/*	Category category=categoryDAO.getCategory(2);
 		categoryDAO.deleteCategory(category);
-		System.out.println("The Category Deleted");*/
+		System.out.println("The Category Deleted");
 		
 		//Retrieving the Data
 		
-		/*List<Category> list=categoryDAO.getCategoryDetails();
+		List<Category> list=categoryDAO.getCategoryDetails();
 		
-		for(Category category:list)
+		for(Category category2:list)
 		{
-			System.out.println(category.getCatid()+":"+category.getCatname()+":"+category.getCatdesc());
-		}*/
+			System.out.println(category2.getCatid()+":"+category2.getCatname()+":"+category2.getCatdesc());
+		}
 		
 		//Update the Category
-		/*Category category=categoryDAO.getCategory(3);
+		Category category=categoryDAO.getCategory(3);
 		category.setCatname("WifiEnMobile");
 		categoryDAO.insertUpdateCategory(category);
-		System.out.println("The Category Updated");*/
-		
+		System.out.println("The Category Updated");
+		*/
 
 	
 }

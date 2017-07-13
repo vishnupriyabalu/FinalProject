@@ -58,7 +58,7 @@ public class SupplierController
 		List<Supplier> suplist=supplierDAO.getSupplierDetails();
 		m.addAttribute("suplist",suplist);
 		
-		return "redirect:/Supplier";
+		return "Supplier";
 	}
 	
 	@RequestMapping(value="/deleteSupplier/{supid}")

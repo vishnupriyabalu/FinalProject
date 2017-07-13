@@ -96,7 +96,9 @@ public class ProductController
 			return "Product";
 		}
 		return "Product";
+	
 	}
+
 	
 	@RequestMapping(value="/updateProduct/{prodid}")
 	public String updateProduct(@PathVariable("prodid")int prodid,Model m)
@@ -165,7 +167,7 @@ public class ProductController
 		
 		return "ProductPage";
 	}
-	@RequestMapping(value="/proddesc/{prodid}")
+	@RequestMapping(value="/productdesc/{prodid}")
 	public String showproductdesc(@PathVariable("prodid") int prodid,Model m)
 	{
 		Product product=productDAO.getProduct(prodid);

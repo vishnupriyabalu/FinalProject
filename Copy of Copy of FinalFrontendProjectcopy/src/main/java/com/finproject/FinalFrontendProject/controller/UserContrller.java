@@ -91,7 +91,7 @@ public class UserContrller
 			message = "Successfully Logged in";
 			} else{
 			message="Please enter a valid username and password";
-			mv=new ModelAndView("Login");
+			mv=new ModelAndView("Loginincorrect");
 		}
 	
 		mv.addObject("message", message);
@@ -99,14 +99,6 @@ public class UserContrller
 		return mv;
 	}
 	
-	/*@RequestMapping("/perform_logout")
-	public class SignOut{
-		@RequestMapping(method=RequestMethod.GET)
-	public String logout(HttpSession session)
-	{   System.out.println("in logout module");
-	session.invalidate();
-	  return "Logout";
-	}
-	}*/
+	
 }
 

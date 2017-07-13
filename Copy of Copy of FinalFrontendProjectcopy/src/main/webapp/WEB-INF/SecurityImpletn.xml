@@ -18,8 +18,8 @@
 	<security:intercept-url pattern="/Userhome" access="hasRole('ROLE_USER')" />
 	<security:intercept-url pattern="/Adminhome" access="hasRole('ROLE_ADMIN')" />
 	
-	<security:form-login login-page="/Login" default-target-url="/" login-processing-url="/isValidUser" authentication-failure-url="/Login" authentication-success-forward-url="/loginsuccess" />
-		<security:logout logout-url="/perform_logout" invalidate-session="true" logout-success-url="/perform_logout" />
+	<security:form-login login-page="/Login" default-target-url="/" login-processing-url="/isValidUser" authentication-failure-url="/Loginf" authentication-success-forward-url="/loginsuccess" />
+		<security:logout logout-url="/perform_logout" invalidate-session="true" logout-success-url="/" />
 		<security:csrf disabled="true" />
 </security:http>
 	

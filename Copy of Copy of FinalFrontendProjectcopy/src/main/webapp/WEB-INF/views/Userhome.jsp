@@ -2,23 +2,79 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
+
 <%@include file="Headeraftrlogin.jsp"%>
-<h1><center>UserHome Page</center></h1>
-<h3>Welcome::"${user.username}"</h3>
+<body style="background-color:#FFCCFF">
+<h3>WELCOME</h3>
 <div id="container">
-<div class="row">
-<div class="col-sm-6 col-md-3">
 <c:forEach items="${prodlist}" var="product">
-<a href="ProductDesc/${product.prodid }" class="thumbnail">
-<img src="<c:url value="/resorces/${product.prodid}.jpg"/>"alt ="Generic placeholder thumbnail"/>
+
+<div class="column">
+<div class="col-sm-6 col-md-4">
+
+<a href="productdesc/${product.prodid}" class="thumbnail">
+<img src="<c:url value="/resources/${product.prodid}.jpg"/>" alt="Generic placeholder thumbnail" width=50%" height="50%"/>
 </a>
 
 <div class="caption">
 <h4>${product.prodname}</h4>
-<p>${product.price}</p>
-</div></c:forEach>
+
+<p>Rs.${product.price}</p>
+<p>${product.pimage}</p>
 </div>
 </div>
 </div>
+</c:forEach>
+</div>
+<br></div>
+
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<%@include file="Footer.jsp" %>
+
 </body>
 </html>

@@ -59,6 +59,12 @@ Ms.Hari<br /></p>
 <br/>
 </div>
 </div>
+<a href="Category">Category</a>
+ <a href="pro">Product</a>
+ <a href="abc">Supplier</a>
+ <a href="Admin">Admin</a>
+ 
+
 <%@include file="Footer.jsp" %>
 
 </body>

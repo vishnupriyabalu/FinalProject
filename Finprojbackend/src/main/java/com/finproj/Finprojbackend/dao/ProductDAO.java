@@ -1,6 +1,7 @@
 package com.finproj.Finprojbackend.dao;
 
-	import java.util.List;
+	import java.util.ArrayList;
+import java.util.List;
 	import javax.transaction.Transactional;
 	import org.hibernate.Query;
 	import org.hibernate.Session;
@@ -53,7 +54,9 @@ import com.finproj.Finprojbackend.model.Product;
 			session.close();
 			return list;
 		}
-		
+		public ArrayList showPrduct() {
+			return null;
+		}
 	}
 
 

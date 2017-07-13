@@ -13,7 +13,7 @@
   <style type="text/css">
 
 .background{
-	background-image: url("http://cdn.wallpapersafari.com/12/67/ar1clU.png");
+	background-color:#FFCCFF;
 	background-size:100%;
 }
 </style>
@@ -24,39 +24,53 @@
             <form align="center" name="myform" class="form-horizontal" action="InsertUser" modelAttribute="user" method="post" role="form">
                 <h2 align="center">Registration Form</h2>
                 <div class="form-group">
-                    <label for="username" class="col-sm-3 control-label">Name</label>
-                    <div class="col-sm-6">
-                       <input type="text" class="form-control" name="username" pattern="[A-Z][a-z]{1,15}" minlength="6" maxlength="16" title="First should be Uppercase followed lowercase,no white space or symbols,min char:6"
-										placeholder="Username" id="username" required />
-							  <span class="help-block"> Name eg.: Smith, Harry</span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="email" class="col-sm-3 control-label">Email</label>
-                    <div class="col-sm-6">
-                       <input class="form-control" required type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-									title="eg:abc@gmail.com"	placeholder="Email" name="email" id="email"
-										onchange="email_validate(this.value);" />
-							 </div>
-                </div>
-                <div class="form-group">
-                    <label for="password" class="col-sm-3 control-label">Password</label>
-                    <div class="col-sm-6">
-                        <input required name="password" type="password" 
-										class="form-control inputpass" placeholder="Enter Password" minlength="6" maxlength="16" title="min char should be 6"
-										id="password" />
-				</div>
-                </div>
-                  
-              <div class="form-group">
-                    <label for="mobile" class="col-sm-3 control-label">Mobile</label>
-                    <div class="col-sm-6">
-                        <input required name="mobile" type="text" 
-										class="form-control inputpass" placeholder="Enter Phonenumber" length="10" title="Compulsary 10 digits,starts only with(7,8,9)"
-						id="mobile" onkeyup="validatephone(this);"pattern="[7-9]{1}[0-9]{9}"required />
-						
-				</div>
-                </div>
+							< <label for="name" class="col-sm-3 control-label">Name</label>
+                 <div class="col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="name" id="name" minlength="2" maxlength="30" pattern="[A-Z][A-za-z\s]{2,30}" placeholder="Enter your Name" title=" First char should be Uppercase followed by lowercase;no digits allowded;Minchar:2;Maxchar:30" required/>
+								</div>
+							</div>
+						</div>
+				<div class="form-group">
+							<label for="username" class="col-sm-3 control-label">Username</label>
+							<div class="col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="username" pattern="[a-z0-9]{5,30}" minlength="5" maxlength="30" id="username" title="Lowercase followed by atleast 2 digits;no space Minchar:5;Maxchar:30" placeholder="Enter your Username" required >
+								</div>
+							</div>
+						</div>
+
+                <div class="form-group"style="color:black;">
+							<label for="email" class="col-sm-3 control-label">Email</label>
+							<div class="col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email" onchange="email_validate(this.value);"required/>
+								</div>
+								<div class="status" id="status"></div>
+							</div>
+						</div>
+                <div class="form-group"style="color:black;">
+							<label for="password" class="col-sm-3 control-label">Password</label>
+							<div class="col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="password" id="password" minlength="6" maxlength="16" title="Minchar:6;Maxchar:16" data-content="Enter Password...."required/>
+								</div>
+							</div>
+						</div>
+              <div class="form-group"style="color:black;">
+							<label for="confirm" class="col-sm-3 control-label">Mobile</label>
+							<div class="col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-phone" aria-hidden="true"></i></span>
+									<input id="mobile" class="form-control" type="text" name="mobile" placeholder="Phone Number" onkeyup="validatephone(this);"pattern="[7-9]{1}[0-9]{9}"required/> </span>
+ 								
+								</div>
+							</div>
+						</div>
              		                <div class="form-group">
                     <div class="col-sm-6 col-sm-offset-1">
                         <div class="checkbox">

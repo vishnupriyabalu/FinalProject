@@ -16,7 +16,8 @@ public class Product {
 	
 	int supid,quantity,price,catid;
 	String prodname,proddesc;
-   @Transient
+  
+	@Transient
 	MultipartFile pimage;
 	
 public MultipartFile getPimage() {

@@ -18,12 +18,17 @@ font-family: Times New Roman;
 	color:#1133;
 	}
 .background {
-	background-image: url("http://74211.com/wallpaper/picture_big/free_wallpaper_of_natural_scenery_three_ladybirds_flying_in_the_grass_.jpg");
-	background-size:100%;
+	background-color:#FFCCFF;
+		background-size:100%;
+}
+div{
+color:#ff0000;
+font-weight: bold;
+
 }
 </style>
 </head>
- <body>
+ <body style="background-color:#FFCCFF">
   
   <div class="background">  
   <br>
@@ -38,13 +43,13 @@ font-family: Times New Roman;
 	   <table  cellspacing="10" cellpadding="2" width="45%" 
 			align="center">
 <tr>
-<td style="color:black;font-weight: bold;font-family: Baskerville Old Face;font-size: 1.5em;" > UserName<p></td>
-<td ><input type="text" id="username" name="username" size="20" required/><p></td>
+<td style="color:black;font-weight: bold;font-family: Baskerville Old Face;font-size: 1.5em;" > username<p></td>
+<td ><input type="text" id="username" name="username" size="22" value="" required/><p></td>
 </tr>
 
 <tr>
-<td style="color:black;font-weight: bold;font-family: Baskerville Old Face;font-size: 1.5em;">Password<p></td>
-<td ><input type="password" id="password" name="password" size="20" /><p></td>
+<td style="color:black;font-weight: bold;font-family: Baskerville Old Face;font-size: 1.5em;">password<p></td>
+<td ><input type="password" id="password" name="password" size="22" value="" required /><p></td>
 </tr>
 <tr>
 <td></td>

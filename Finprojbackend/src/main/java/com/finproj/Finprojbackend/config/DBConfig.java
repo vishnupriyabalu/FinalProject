@@ -24,7 +24,7 @@ public class DBConfig {
 		System.out.println("Starting of the method getH2DataSource");
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("org.h2.Driver");
-		dataSource.setUrl("jdbc:h2:~/testdb1");
+		dataSource.setUrl("jdbc:h2:~/testdb2");
 		dataSource.setUsername("sa");
 		dataSource.setPassword("");
 		System.out.println("Data Source Creation");

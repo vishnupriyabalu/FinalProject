@@ -45,4 +45,10 @@ public  List<Cart> getCartItem(String username){
 		Cart cart=(Cart)session.get(Cart.class, citemid);
 		return cart;
 	}
+	@Transactional
+	public void updatecartitem(Cart cart)
+	{
+		sessionFactory.getCurrentSession().update(cart);
+		}
+		
 }

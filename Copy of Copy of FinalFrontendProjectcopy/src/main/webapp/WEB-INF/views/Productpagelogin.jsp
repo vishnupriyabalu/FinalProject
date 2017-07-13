@@ -23,11 +23,11 @@
 				<td>Product Desc</td>
 				<td>${prodinfo.proddesc}</td>
 			</tr>
-		<tr>
-		<tr>	
+		
+	<!--	<tr>	
 		
 		<td>
-		<form action="<c:url value="/addtocart/${prodinfo.prodid}"/>" method="get" >
+		<form action="<c:url value="/addtocart/${prodinfo.quantity}"/>" method="get" >
 		Quantity<select>
   <option value="1">1</option>
   <option value="2">2</option>
@@ -39,7 +39,11 @@
   <option value="8">8</option>
   <option value="9">9</option>
   <option value="10">10</option>  
-</select></td><td>
+</select></td><td> -->
+<tr>
+				<td>Quantity</td>
+				<td>${prodinfo.quantity}</td>
+			</tr>
 		<input type="submit" value="addtocart" class="btn btn-xs btn-success btn-block"/>
 		</form></td></tr>
 		</table>

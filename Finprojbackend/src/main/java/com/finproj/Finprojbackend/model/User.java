@@ -9,10 +9,10 @@ import javax.persistence.Table;
 public class User {
 	@Id
 	@GeneratedValue
-	String userid;
-	
+	int userid;
 	String username;
-	String password;
+	String name;
+		String password;
 	String role="Role_User";
 	String email;
 	String mobile;
@@ -23,6 +23,12 @@ public class User {
 	}
 	public void setUsername(String username) {
 		this.username = username;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 	public String getPassword() {
 		return password;

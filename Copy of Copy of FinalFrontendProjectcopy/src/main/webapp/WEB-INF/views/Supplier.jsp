@@ -15,15 +15,15 @@
 <form:form action="InsertSupplier" modelAttribute="supplier">
 <table align="center">
 			<tr>
-				<td colspan="2"><center>Supplier Details</center></td>
+				<td colspan="2"><h3><center>Supplier Details</h3></center></td>
 			</tr>
 			<tr>
 				<td>Supplier ID</td>
-				<td><form:input path="supid" /></td>
+				<td><form:input type="hidden" path="supid" /></td>
 			</tr>
 			<tr>
 				<td>Supplier Name</td>
-				<td><form:input path="supname" /></td>
+				<td><form:input path="supname"  /></td>
 			</tr>
 			
 					
@@ -32,8 +32,8 @@
 				<td><form:input path="supaddrs" /></td>
 			</tr>
 			
-			<tr>
-			<td colspan="2"><input type="submit" /></td>
+			<tr><td>
+			<td colspan="2"><input type="submit" /></td></td>
 			</tr>
 </table>
 </form:form>

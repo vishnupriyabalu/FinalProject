@@ -29,7 +29,7 @@
 </c:if>
 <table align="center" cellspacing="2">
 	<tr>
-		<td colspan="2">Category Details</td>
+		<td colspan="2"><center><h3>Category Details</h3></center></td>
 		<c:if test="${flag}">
 		<input type="hidden" name="catid" value="${category.catid }"/>
 		</c:if>
@@ -47,15 +47,15 @@
 	<tr>
 	<td>Category Description</td>
 	<c:if test="${flag}">
-	<td><input type="text" name="catdesc" value="${category.catdesc }"/></td>
+	<td><input type="text" name="catdesc"  value="${category.catdesc }"requied/></td>
 	</c:if>
 	<c:if test="${!flag}">
-	<td><input type="text" name="catdesc"/></td>
+	<td><input type="text" name="catdesc" requied/></td>
 	</c:if>
 	</tr>
 	<tr>
 	<td colspan="2">
-		<input type="submit" value="AddCategory"/>
+	<input type="submit" value="AddCategory"/>
 	</td>
 	</tr>
 </table>
