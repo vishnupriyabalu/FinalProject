@@ -16,6 +16,12 @@ public class PageController
 		System.out.println("--Moving to Login Page");
 		return "Login";
 	}
+	@RequestMapping("/thanku")
+	public String ShowThanku()
+	{
+		System.out.println("--Moving to Thanku Page");
+		return "Thanku";
+	}
 	@RequestMapping("/Loginf")
 	public String ShowLoginfail()
 	{
@@ -56,19 +62,5 @@ public String ShowContact()
 	System.out.println("--Moving to Contactus Page---");
 	return "ContactUS";
 }
-/*@RequestMapping("/perform_logout")
-public String ShowLogout()
-{
-	System.out.println("--Moving to Logout Page---");
-	return "index";
-}*/
-/*@RequestMapping("/perform_logout")
-public class SignOut{
-	@RequestMapping(method=RequestMethod.GET)
-public String logout(HttpSession session)
-{   System.out.println("in logout module");
-session.invalidate();
-  return "Logout";
-}
-}*/
+
 }

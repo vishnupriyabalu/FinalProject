@@ -41,8 +41,14 @@
 <input type="radio" name="pmode" value="CC"/>Cash on Delivery
 </td></tr>
 <tr bgcolor="gray" >
-<td colspan="2"><input type="submit" value="pay"/></td>
-</tr>
+<tr bgcolor="black">
+<td><a href="<c:url value="/thanku" />"> <b><h4>pay</h4></b></a></td>
+
+
+
 </table>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<%@include file="Footer.jsp" %>
+
 </body>
 </html>

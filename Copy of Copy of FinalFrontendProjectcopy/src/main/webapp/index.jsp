@@ -114,20 +114,31 @@ height="140">
           <img class="featurette-image img-responsive center-block" src="http://3.bp.blogspot.com/-2ExpuN9Y__g/VqnI7Tk8awI/AAAAAAAANro/d--6cU47aOc/s640/lovely-valentine-day-animation-image.gif" alt="Generic placeholder image">
         </div>
       </div>
-      <hr class="feature-divider">
-
-      <div class="rowe">
-        <div class="col-md-11">
-          <h2 class="featurette-heading"> <span class="text-muted">Gift is not just giving,it is a feel good factor presented to that relationship.</span></h2>
-          <p class="lead">We should give as we would receive, cheerfully, quickly, and without hesitation.The manner of giving is worth more than the gift.Pleasure is spread through the earth
-In stray gifts to be claimed by whoever shall find.
-          </p>
-        </div>
-        <div class="col-md-11">
-          <img class="featurette-image img-responsive center-block" src="http://static.squarespace.com/static/5176fdb5e4b083b631f31303/t/529f9883e4b0d8a34325bd13/1386190991178/gift-gif3.gif" alt="Generic placeholder image">
-        </div>
       </div>
-</div>
+<br><br>
+
+<div class="container">
+ <div class="item">
+ <div class="row">
+ <div class="col-md-4">
+ <img src="https://sc01.alicdn.com/kf/HTB1uixUKXXXXXaFaXXXq6xXFXXX9/3D-Laser-Engraving-Crystal-cube-with-LED.jpg" class="img-thumbnail" width="250" height="250">
+ <h1>Glass Article</h1>
+
+<center></center> 
+ </div>
+  <div class="col-md-4">
+ <img src="https://2.imimg.com/data2/AN/II/MY-4401555/3-in-1-gift-box-250x250.jpg"class="img-thumbnail" width="250" height="250"></a>
+ <h1>Wooden Article</h1>
+<center></center>
+ </div>   
+ <div class="col-md-4">
+ <img src="https://s-media-cache-ak0.pinimg.com/originals/a1/d4/86/a1d486a713e0779db1e2ad738e710166.jpg" class="img-thumbnail" width="250" height="250"></a>
+  <h1>Soft Toys</h1>
+ 
+ </div>        
+ </div>
+ </div>    
+			</div>
 
       <!-- /END THE FEATURETTES -->
 

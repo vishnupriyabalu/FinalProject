@@ -4,7 +4,7 @@
 
 <%@include file="Headeraftrlogin.jsp"%>
 <body  style="background-color:#FFCCFF">
-<table width="50% align="center" border="1">
+<table width="50%" align="center" border="1">
 			<tr bgcolor="pink">
 				<td colspan="2"><center>Product Description</center></td>
 			</tr>
@@ -14,12 +14,16 @@
 				<td>Product Name</td>
 				<td>${prodinfo.prodname}</td>
 			</tr>
-			
+			<tr>
+				<td>Product Id</td>
+				<td>${prodinfo.prodid}</td>
+			</tr>
+		
 				<tr>
 				<td>Price</td>
 				<td>${prodinfo.price}</td>
 			</tr>
-			<tr>
+						<tr>
 				<td>Product Desc</td>
 				<td>${prodinfo.proddesc}</td>
 			</tr>
@@ -28,7 +32,7 @@
 		
 		<td>
 		<form action="<c:url value="/addtocart/${prodinfo.prodid}"/>" method="get" >
-		Quantity<select>
+		Quantity<select name="quantity">
   <option value="1">1</option>
   <option value="2">2</option>
   <option value="3">3</option>

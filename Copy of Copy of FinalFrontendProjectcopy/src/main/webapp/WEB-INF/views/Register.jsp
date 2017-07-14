@@ -57,7 +57,7 @@
 							<div class="col-sm-6">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="password" id="password" minlength="6" maxlength="16" title="Minchar:6;Maxchar:16" data-content="Enter Password...."required/>
+									<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password" minlength="6" maxlength="16" title="Minchar:6;Maxchar:16" data-content="Enter Password...."required/>
 								</div>
 							</div>
 						</div>

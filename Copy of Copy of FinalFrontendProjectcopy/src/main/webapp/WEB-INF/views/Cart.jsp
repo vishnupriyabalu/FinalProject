@@ -18,32 +18,32 @@
 <td>Operation</td>
 </tr>
 
-<c:forEach items="${cartitems}" var="cartitem">
+<c:forEach items="${cartitems }" var="cartitem">
 <tr>
-<form action="<c:url value="/updatecartitems/${cartitem.citemid}"/>"/> 
-<td>${cartitem.prodname}</td>
-<td><input type="text" value="${cartitem.quantity}" name="quantity" required/></td>
-<td>${cartitem.price*cartitem.quantity}</td>
-<td><img src="<c:url value="/resorces/${cartitem.prodid}.jpg" /> " width="100" height="60" />
-</td>
+<form action="<c:url value="/updatecartitems/${cartitem.citemid }" />" />
+<td>${cartitem.prodname }</td>
+<td><input type="text" value="${cartitem.quantity}"name="quantity" required/></td>
+<td>RS.${cartitem.price * cartitem.quantity}</td>
+<td><img src="<c:url value='/resources/${cartitem.prodid}.jsp'/>" width="100" height="100">
 <td>
 <input type="submit" value="UPDATE" class="btn-success btn-block"/>
-<a href="<c:url value="/deletecartitem/${cartitem.citemid }"/>">DELETE</a>
+<a href="<c:url value="/deletecartitem/${cartitem.citemid }" />">DELETE </a>
 </td>
 </tr>
 </c:forEach>
 <tr>
-<td><a href="productpage">Continue Shopping</a></td></tr>
+
+<br>
+<td><a href="<c:url value="/checkout" />"> <b><h4>OrderConfirm</h4></b></a></td>
+</tr>
 </table>
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<br><br>
-<br>
-<br><br>
-<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+<%@include file="Footer.jsp" %>
+
 
 </body>
 </html>
